@@ -1,0 +1,134 @@
+body {
+  background: #2A7B9B;
+  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  background-image: url(/profile/images/graham-holtshausen-fUnfEz3VLv4-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1, h2 {
+  color: black;
+  font-family: "Rowdies", sans-serif;
+  font-weight: bold;
+}
+
+.emoji:hover {
+  animation: spin 1s linear infinite;
+}
+
+a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Rowdies", sans-serif;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+body {
+  color: black;
+  font-family: "Rowdies", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px;
+  border-radius: 25%;
+  margin: 0 auto;
+  }
+
+.card-white {
+  background: #2A7B9B;
+  background: linear-gradient( 90.2deg,  rgba(1,47,95,1) -0.4%, rgba(56,141,217,1) 106.1% );
+  padding: 30px;
+  border: 3px solid black;
+  border-radius: 25%;
+  margin: 10px;
+  animation: fadeGradient 3s infinite alternate;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.profile-img {
+  width: 300px;
+  border-radius: 50%;
+  border: 6px solid black;
+  border-radius: 50%;
+  transition: transform 2s ease-in-out;
+}
+
+.profile-img:hover{
+  width: 300px;
+  border-radius: 50%;
+  border: 6px solid red;
+  border-radius: 50%;
+  transform: rotate(360deg);
+  animation: spin 3s linear infinite;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.video {
+  border-radius: 25%;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+@keyframes move-bg {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+body {
+  background-image: url("/profile/images/graham-holtshausen-fUnfEz3VLv4-unsplash.jpg");
+  animation: move-bg 10s infinite alternate ease-in-out ; /* Moves the background over 5 seconds */
+}
+
+.social-icons {
+  font-size: 30px;
+}
+
+.social-icons:hover {
+  color:red;
+  transform: scale(2);
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
